@@ -38,6 +38,7 @@ h1:hover {
 }
 
 .slider h2 {
+  text-align:left;
   font-size: 2vw;
   letter-spacing: 0.3rem;
   font-family: "ROBOTO", sans-serif;
@@ -45,6 +46,13 @@ h1:hover {
   color: #dc143c;
   z-index: 4;
 }
+
+.slider h4 {
+  text-align:left;
+  font-family: "ROBOTO", sans-serif;
+  color: #dc143c;
+}
+
 h3.span {
   font-size: 2vw;
   letter-spacing: 0.15rem;
