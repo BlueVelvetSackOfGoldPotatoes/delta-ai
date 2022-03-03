@@ -11,7 +11,7 @@ body {
 .page {
     min-height: 100vh;
     position: relative;
-    background-color: #fff8dc;
+    /* background-color: #fff8dc; */
     text-align: center;
     padding: 0rem 5rem;
 }
@@ -79,7 +79,7 @@ a {
     text-decoration: none;
 }
 
-.nav-container {
+/* .nav-container {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -91,7 +91,7 @@ a {
     z-index: 10;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
+ 
 .nav-container--top-first {
     position: fixed;
     top: 4rem;
@@ -127,7 +127,7 @@ a {
     height: 5px;
     background: #03dac6;
     transition: left 0.3s ease;
-}
+} */
 
 .background {
     position: absolute;
