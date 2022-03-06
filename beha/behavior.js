@@ -1,6 +1,6 @@
 window.onload = function() {
     Particles.init({
-        selector: "#bg-canvas",
+        selector: ".background",
         color: ["#dc143c", "#dc143c", "#dc143c"],
         connectParticles: true,
         responsive: [{
