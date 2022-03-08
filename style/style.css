@@ -9,13 +9,14 @@ html {
 }
 
 body {
-    font-family: "ROBOTO", sans-serif;
+    font-family: sans-serif;
+    /* margin: 0; */
 }
 
 .page {
     min-height: 100vh;
     position: relative;
-    background-color: #fff8dc;
+    background-color: #009cda;
     text-align: center;
     padding: 0rem 5rem;
 }
@@ -33,19 +34,19 @@ body {
 }
 
 .page h1 {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: sans-serif;
     font-size: 5rem;
     margin: 0;
     margin-bottom: 3rem;
     padding-bottom: 0.5rem;
     letter-spacing: 0.3rem;
-    color: #03dac6;
+    color: #fff;
     cursor: default;
 }
 
 .page h1:hover {
     transform: translate3d(0, -10px, 22px);
-    color: #00ced1;
+    color: #e71e07;
     transition: all 0.3s ease;
 }
 
@@ -67,9 +68,9 @@ body {
 p {
     text-align: left;
     letter-spacing: 1px;
-    font-family: "ROBOTO", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
-    color: #dc143c;
+    color: #fff;
     margin-bottom: 2rem;
     font-size: 1.2rem;
 }
@@ -91,7 +92,7 @@ a {
     width: 100%;
     height: 6rem;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
-    background: #fff8dc;
+    background: #fcd000;
     z-index: 10;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -112,7 +113,7 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    color: #deb887;
+    color: #fff;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 2rem;
@@ -120,7 +121,7 @@ a {
 
 .nav-tab:hover {
     color: #00ffff;
-    background: #dc143c;
+    background: #e71e07;
     transition: all 0.5s ease;
 }
 
@@ -188,15 +189,15 @@ a {
 }
 
 .loader span {
-    color: #faebd7;
-    text-shadow: 0 0 0 #faebd7;
+    color: #009cda;
+    text-shadow: 0 0 0 #009cda;
     animation: loading 1s ease-in-out infinite alternate;
 }
 
 @keyframes loading {
     to {
-        text-shadow: 20px 0 70px #ff0266;
-        color: #ff0266;
+        text-shadow: 20px 0 70px #e71e07;
+        color: #e71e07;
     }
 }
 
@@ -282,4 +283,87 @@ a {
 
 .loader span:nth-child(22) {
     animation-delay: 2.1s;
+}
+
+.mario ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 220px);
+	justify-content: center;
+}
+.mario li {
+	grid-column: span 2;
+	text-align: center;
+	border-radius: 65px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	position: relative;
+	padding: 20px;
+	border: 20px solid #0000;
+	background: linear-gradient(#e71e07 0 0) content-box,
+		linear-gradient(var(--c, #fcd000) 0 0) padding-box,
+		linear-gradient(var(--d, 90deg), #0000 75%, #42b132 0) border-box;
+}
+.mario li:nth-child(even) {
+	grid-column-end: -1;
+	--d: -90deg;
+	--c: #009cda;
+}
+.mario li:not(:last-child) {
+	margin-bottom: -20px;
+}
+.mario li:before,
+.mario li:after {
+	content: "";
+	display: block;
+	height: 0.6em;
+}
+
+.mario time {
+	position: absolute;
+	font-size: 0.65em;
+	left: calc(100% + 50px);
+	top: 50%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+}
+.mario li:nth-child(even) time {
+	left: auto;
+	color: #000;
+	right: calc(100% + 50px);
+}
+.mario time:before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	top: calc(50% - 5px);
+	right: calc(100% + 5px);
+	width: 65px;
+	background: repeating-linear-gradient(-90deg, #fcd000 0 5px, #0000 0 10px) 50%/100%
+		2px no-repeat;
+}
+.mario li:nth-child(even) time:before {
+	right: auto;
+	left: calc(100% + 5px);
+	background: repeating-linear-gradient(90deg, #009cda 0 5px, #0000 0 10px) 50%/100%
+		2px no-repeat;
+}
+
+.mario h1,
+.mario p {
+	display: none;
+}
+
+.mario {
+	background: 
+		radial-gradient(farthest-side at top right, #42b132 98%, #0000)
+			calc(50% - 10px) 0/20px 20px no-repeat,
+		radial-gradient(farthest-side at bottom right, #42b132 98%, #0000)
+			calc(50% - 10px) 100%/20px 20px no-repeat,
+		linear-gradient(90deg, #fcd000 50%, #009cda 0);
 }
