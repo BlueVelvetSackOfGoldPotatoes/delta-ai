@@ -50,6 +50,8 @@ body {
     transition: all 0.3s ease;
 }
 
+
+
 #intro-page h1,
 #header-shim {
     font-size: 8rem;
@@ -73,6 +75,10 @@ p {
     color: #fff;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+a:link {
+    color: white;
 }
 
 p.lead {
