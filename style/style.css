@@ -84,7 +84,7 @@ a:link {
     color: white;
 }
 
-p.lead {
+p.lead:hover:not(.active){
     color: white;
     font-size: 1.5rem;
     letter-spacing: 2px;
