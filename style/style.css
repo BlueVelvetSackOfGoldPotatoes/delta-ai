@@ -40,7 +40,7 @@ body {
     margin-bottom: 3rem;
     padding-bottom: 0.5rem;
     letter-spacing: 0.3rem;
-    color: #fff;
+    color: white;
     cursor: default;
 }
 
@@ -51,10 +51,13 @@ body {
 }
 
 
-
 #intro-page h1,
 #header-shim {
     font-size: 8rem;
+}
+
+href {
+    color: white;
 }
 
 #header-shim {
@@ -72,7 +75,7 @@ p {
     letter-spacing: 1px;
     font-family: sans-serif;
     font-weight: 300;
-    color: #fff;
+    color: white;
     margin-bottom: 2rem;
     font-size: 1.2rem;
 }
@@ -82,6 +85,7 @@ a:link {
 }
 
 p.lead {
+    color: white;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
